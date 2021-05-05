@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,600;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: linear-gradient(#2b1055, #7597de);
+}
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;}
+header .logo{
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+}
+header ul li .active{
+    background-color: #fff;
+    color: #2b1055;
+    border-radius: 20px;
+}
+header ul li a:hover{
+    background-color: #fff;
+    color: #2b1055;
+    border-radius: 20px;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+section::before{
+    content: "";
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+    height: 57.5%;
+    background: linear-gradient(to top, #1c0522, transparent);
+    z-index: 1000;
+}
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+section img#moon{
+    mix-blend-mode: screen;
+}
+section img#mountains_front{
+    z-index: 11;
+}
+#text{
+    position: absolute;
+    white-space: nowrap;
+    font-size: 4.5vw;
+    /* font-size: 1.6rem; */
+    color:#fff;
+    z-index: 9;
+}
+.sec{
+    position:relative;
+    padding: 100px;
+    background: #1c0522;
+    text-align: center;
+    color: #fff;
+}
+.sec h2{
+    margin: bottom 10px;
+    color: #fff;
+}
+.sec p{
+    font: size 1rem;
+    color: #fff;
+}
+hr {
+    margin: 100px auto;
+    width: 4%;
+    border: dotted 6px;
+    border-bottom: none;
+    border-color: rgb(129, 125, 163);
+}
+
+
+/*Extras*/
+h3{
+    padding-bottom: 30px;
+    text-decoration:solid;
+    text-decoration-color: #06dbdb;
+    color: rgb(97, 81, 241);
+}
+.sec .arrow {
+    background-color: rgba(0, 0, 0, .25);
+    font-family: 'Montserrat', sans-serif;
+    bottom: 20px;
+    right: 30px;
+    width: 70px;
+    height: 30px;
+    position: fixed;
+    color: rgb(12, 12, 11);
+    font-weight: bolder;
+    border-radius: 10px;
+    border-width: none;
+    z-index: 99;
+}
+
+.sec .arrow:hover {
+    background-color: rgba(214, 43, 43, 0.25);
+    font-family: 'Montserrat', sans-serif;
+    bottom: 20px;
+    right: 30px;
+    width: 70px;
+    height: 30px;
+    position: fixed;
+    color: rgb(12, 12, 11);
+    font-weight: bolder;
+    border-width: none;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.sec .talk-me {
+    width: 54%;
+    margin: auto;
+}
+
+.sec .skill-row {
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+    line-height: 2;
+}
+
+.sec li {
+    font-weight: bolder;
+}
+
+.sec .main-img1 {
+    width: 100px;
+    height: 150px;
+    border-radius: 100px;
+}
+
+.sec .server {
+    width: 100px;
+    height: 150px;
+    border-radius: 20px;
+    float: left;
+    padding-right: 30px;
+}
+
+.interview {
+    width: 100px;
+    height: 150px;
+    border-radius: 100px;
+    float: right;
+    padding-left: 30px;
+}
+
+.training,
+.coding {
+    width: 100px;
+    height: 150px;
+    border-radius: 80px;
+    float: left;
+    padding-right: 30px;
+}
+
+.coding {
+    float: right;
+    padding-right: 0;
+    padding-left: 30px;
+}
+
+.design {
+    padding-left: 50px;
+}
+
+.sec .design p {
+    margin-left: 10px;
+}
+
+.body-img {
+    width: 500px;
+    height: 250px;
+    border-radius: 100px;
+}
+
+.contact-me {
+    margin-bottom: 100px;
+}
+
+.bottom-container {
+    background-color: rgb(40, 36, 71);;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.bottom-container-links {
+    padding-top: 30px;
+}
+
+.bottom-container-links a {
+    padding-top: 10px;
+    margin-right: 2rem;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1rem;
+    color: #0e868a;
+}
+
+.bottom-container-links a:hover {
+    color: #cec37e
+}
+
+.bottom-container-copy {
+    margin-top: 50px;
+    padding-bottom: 30px;
+    font-weight: bolder;
+    font-size: small;
+    color: #EAF6F6;
+}
+
+.bottom-container-copy:hover {
+    color: #06dbdb;
+}
+
+.bottom-container p {
+    margin: 50px auto auto 50px;
+}
+
+.btn {
+    background: #3D94F6;
+    background-image: -webkit-linear-gradient(top, #3D94F6, #1E62D0);
+    background-image: -moz-linear-gradient(top, #3D94F6, #1E62D0);
+    background-image: -ms-linear-gradient(top, #3D94F6, #1E62D0);
+    background-image: -o-linear-gradient(top, #3D94F6, #1E62D0);
+    background-image: linear-gradient(to bottom, #3D94F6, #1E62D0);
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: bolder;
+    padding: 11px;
+    box-shadow: 1px 20px 20px 0px #000000;
+    -webkit-box-shadow: 1px 20px 20px 0px #000000;
+    -moz-box-shadow: 1px 20px 20px 0px #000000;
+    text-shadow: -20px 28px 14px #000000;
+    border: solid #337FED 0px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+}
+
+.btn:hover {
+    border: solid #337FED 0px;
+    background: #1E62D0;
+    background-image: -webkit-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -moz-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -ms-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: -o-linear-gradient(top, #1E62D0, #3D94F6);
+    background-image: linear-gradient(to bottom, #1E62D0, #3D94F6);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.tutorial{
+    text-decoration: none;
+    color: #EAF6F6;
+}
